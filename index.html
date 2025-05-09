@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo UP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sección del Mapa -->
+        <div class="map-container">
+            <img id="campus-map" src="Mapas/mapa-general.jpg" alt="Mapa General">
+        </div>
+
+        <!-- Sección de Información -->
+        <div class="info-container">
+            <h2>Mapas</h2>
+            <ul id="map-tabs">
+                <li data-map="mapa-general" class="active">Mapa General</li>
+                <li data-map="rodin-planta-baja">Rodin Planta Baja</li>
+                <li data-map="rodin-primer-piso">Rodin Primer Piso</li>
+                <li data-map="valencia">Valencia</li>
+            </ul>
+
+            <!-- Listas de Lugares por Mapa -->
+            <ul id="mapa-general-places" class="places-list active"></ul>
+            <ul id="rodin-planta-baja-places" class="places-list"></ul>
+            <ul id="rodin-primer-piso-places" class="places-list"></ul>
+            <ul id="valencia-places" class="places-list"></ul>
+
+
+            <!-- Información del lugar seleccionado -->
+            <div id="info-box" class="info-box">
+                <img id="place-image" src="" alt="" style="display: none;">
+                <h3 id="place-name">Selecciona un lugar</h3>
+                <p id="place-description">Haz clic en un lugar para ver más detalles.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
