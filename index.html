@@ -8,40 +8,38 @@
 </head>
 <body>
     <div class="container">
-        <!-- Sección del Mapa -->
+        <!-- Mapa -->
         <div class="map-container">
-            <img id="campus-map" src="Mapas/mapa-general.jpg" alt="Mapa General">
+            <img id="campus-map" src="imagenes/mapa-general.jpg" alt="Mapa General" data-map="mapa-general">
         </div>
 
-        <!-- Sección de Información -->
+        <!-- Sección de Mapas y Lugares -->
         <div class="info-container">
             <h2>Mapas</h2>
-            <ul id="map-tabs">
-                <li data-map="mapa-general" class="active">Mapa General</li>
-                <li data-map="rodin-planta-baja">Rodin Planta Baja</li>
-                <li data-map="rodin-primer-piso">Rodin Primer Piso</li>
-                <li data-map="valencia">Valencia</li>
-            </ul>
+            <div class="map-buttons">
+                <button class="map-button active" data-map="mapa-general">Mapa General</button>
+                <button class="map-button" data-map="rodin-planta-baja">Rodin Planta Baja</button>
+                <button class="map-button" data-map="rodin-primer-piso">Rodin Primer Piso</button>
+                <button class="map-button" data-map="valencia">Valencia</button>
+            </div>
 
-            <!-- Listas de Lugares por Mapa -->
-            <ul id="mapa-general-places" class="places-list active"></ul>
-            <ul id="rodin-planta-baja-places" class="places-list"></ul>
-            <ul id="rodin-primer-piso-places" class="places-list"></ul>
-            <ul id="valencia-places" class="places-list"></ul>
+            <ul id="places-list"></ul>
 
-
-            <!-- Información del lugar seleccionado -->
             <div id="info-box" class="info-box">
-                <img id="place-image" src="" alt="" style="display: none;">
                 <h3 id="place-name">Selecciona un lugar</h3>
+                <img id="place-image" src="" alt="" style="display: none;">
                 <p id="place-description">Haz clic en un lugar para ver más detalles.</p>
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
 
 
 
